@@ -1,15 +1,15 @@
-function gamotvla(){
-    var x = document.getElementById(ricxvi).value;
+function gamotvla() {
+    var x = document.getElementById("ricxvi").value;
+    var text = document.getElementById("txt");
 
-    if (x != 0 ) {
-        window.alert(" არ შეიძლება იყოს 0-ის ტოლი");
-        return;
+    if(x.lengh == 0) {
+      text.innerHTML = "არ შეიძლება იყოს 0-ის ტოლი!";
+      return;
     }
 
-
-if( x % 2 == 0) {
-    window.alert("ჩაწერილი რიცხვი არის ლუწი");
-  }else if(x % 2 == 1) {
-    window.alert("ჩაწერილი რიცხვი არის კენტი");
+if(x < 0) {
+    window.alert("რიცხვი უარყოფითია!");
+  }else if(x > 0) {
+    window.alert("რიცხვი დადებითია!");
   }
 }
